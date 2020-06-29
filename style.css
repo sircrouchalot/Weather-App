@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    height: 500px;
+}
+.page-header {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: #f0f0f0;
+    background-color: #292457;
+}
+
+#sidebar {
+    background-color: #d6d6d6;
+    width: 250px;
+    border-radius: 0 0 8px 8px;
+}
+
+#search-bar {
+    display: flex;
+    margin: 10px auto 10px 5px;
+}
+
+#current-weather {
+    margin: 20px auto;
+}
+
+#future-forecast {
+    margin: 20px auto;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header class="page-header">
+    <h1>Weather Dashboard</h1>
+</header>
+
+<body>
+    <div class="row">
+        <nav class="col-4 col-md-2" id="sidebar">
+            <div class="input-group mb-3" id="search-bar">
+                <input type="text" class="form-control" placeholder="Search by City or Zipcode"
+                    aria-label="City or Zipcode" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+        <div class="col-7 col-md-9" id="weather">
+            <div class="card" id="current-weather">
+                <div class="card-header">
+                    Current Weather
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Current City</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
+
+            <div class="card" id="future-forecast">
+                <div class="card-header">
+                    Future Forecast
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">5-Day Forecast</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
