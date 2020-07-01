@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -22,10 +19,11 @@
     <div class="row">
         <nav class="col-4 col-md-2" id="sidebar">
             <div class="input-group mb-3" id="search-bar">
-                <input type="text" class="form-control" id="city-input" placeholder="Search by City or Zipcode"
-                    aria-label="City or Zipcode" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" id="city-input" placeholder="Search by City"
+                    aria-label="City" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" id="searchBtn" type="button"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-secondary" id="searchBtn" type="button"><i
+                            class="fas fa-search"></i></button>
                 </div>
             </div>
         </nav>
@@ -38,6 +36,7 @@
                 <div class="card-body">
                     <h5 class="card-title" id="current-city"></h5>
                     <div class="card-text">
+                        <img id="weatherIcon" src="" alt="">
                         <div id="temp"></div>
                         <div id="humidity"></div>
                         <div id="wind"></div>
@@ -49,17 +48,74 @@
 
             <div class="card" id="future-forecast">
                 <div class="card-header">
-                    Future Forecast
+                    5-Day Forecast
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">5-Day Forecast</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
+                    <h5 class="card-title" id="forecast-title"></h5>
+                    <div class="card text-white bg-primary mb-3 forecast" style="max-width: 10rem;">
+                        <div class="card-header" id="day1"></div>
+                        <div class="card-body">
+                            
+                            <p class="card-text">       
+                                <img id="icon1" src="" alt="">
+                                <div id="tempforecast1"></div>
+                                <div id="humidityforecast1"></div>
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="card text-white bg-primary mb-3 forecast" style="max-width: 10rem;">
+                        <div class="card-header" id="day2"></div>
+                        <div class="card-body">              
+                            <p class="card-text">
+                                <img id="icon2" src="" alt="">
+                                <div id="tempforecast2"></div>
+                                <div id="humidityforecast2"></div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-3 forecast" style="max-width: 10rem;">
+                        <div class="card-header" id="day3"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                
+                                <img id="icon3" src="" alt="">
+                                <div id="tempforecast3"></div>
+                                <div id="humidityforecast3"></div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-3 forecast" style="max-width: 10rem;">
+                        <div class="card-header" id="day4"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                
+                                <img id="icon4" src="" alt="">
+                                <div id="tempforecast4"></div>
+                                <div id="humidityforecast4"></div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-3 forecast" style="max-width: 10rem;">
+                        <div class="card-header" id="day5"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                
+                                <img id="icon5" src="" alt="">
+                                <div id="tempforecast5"></div>
+                                <div id="humidityforecast5"></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>          
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
 </body>
 
