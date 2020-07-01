@@ -10,7 +10,7 @@ I couldn't figure out how to use the UV Index API in conjunction with the curren
 I also could not get the buttons on the sidebar to save in localStorage. However, all of the other functionality of the site remains.
 
 ## Screenshot
-![screenshot](./images/screenshot.PNG)
+![screenshot](/Images/screenshot.PNG)
 
 ## Links
 GitHub Page: https://sircrouchalot.github.io/Weather-App/
